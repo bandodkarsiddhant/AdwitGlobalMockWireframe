@@ -1,0 +1,90 @@
+/* -- dropdown --  */
+
+#dropdown-menu {
+  width: 10rem;
+  height: 2rem;
+  margin: 2rem 1rem;
+}
+
+/* -- button wrap -- */
+
+
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  display: inline-block;
+}
+.search input {
+  width: 250px;
+  height: 38px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.search input {
+  text-indent: 5px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.search .fa-search {
+  position: absolute;
+  top: 11px;
+  right: 90%;
+}
+
+/* -- datatable --  */
+
+
+
+#example th,td
+{
+
+    text-align: center;
+}
+
+#example_wrapper {
+  overflow: hidden;
+}
+
+.dataTables_paginate {
+  margin: 4rem 1.3rem !important;
+}
+
+/* -- modal --  */
+
+/* -- Modals --  */
+
+/* -- Eye Modal --  */
+
+.eye-modal{
+
+    border: solid 1px;
+    border-radius: 10px;
+    width: 23rem;
+}
+
+.eye-modal>div{
+
+    background-color: rgb(196, 196, 196);
+    padding: 5px ;
+    border-radius:10px 10px 0 0 ;
+    
+}
+
+.eye-modal ul{
+
+    list-style-type: none;
+}
+
+.eye-modal h6{
+
+    padding-left: 24px;
+}
+
+.modal-footer{
+
+    
+    display: flex;
+    justify-content: center;
+}

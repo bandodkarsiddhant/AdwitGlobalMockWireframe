@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- For datatable -->
+
+    <link rel="stylesheet"
+        href="  https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+
+    <!-- -- css --  -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  bg-light navbar-light shadow-0  ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img id="MDB-logo"
+                    src="https://static.wixstatic.com/media/eaace3_3f63d0cb87bc4b2ebdc1159cec3486c6~mv2.png"
+                    alt="MDB Logo" draggable="false" height="30" /></a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"></i>Workstation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"></i>Reports</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"><i class="far fa-envelope"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"><i class="fas fa-question-circle"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#!"><i class="far fa-user-circle"></i></a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <!-- -- dropdown --  -->
+
+    <select name="" id="dropdown-menu">
+        <option value="">My Queue</option>
+        <option value="">b </option>
+        <option value="">c</option>
+    </select>
+
+    <!-- ---------------------------------------------  -->
+
+    <!-- -- tabs --  -->
+
+    <div class="btn-wrapper btn-toolbar mx-3 " role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group  me-2 shadow-0" role="group" aria-label="First group">
+            <button type="button" class="btn btn-light btn-outline-dark active">All (6)</button>
+            <button type="button" class="btn btn-light btn-outline-dark">Revisions (2)</button>
+            <button type="button" class="btn btn-light btn-outline-dark">New Ads (2)</button>
+            <button type="button" class="btn btn-light btn-outline-dark">Design Check (1)</button>
+            <button type="button" class="btn btn-light btn-outline-dark">Proof Sent (1)</button>
+        </div>
+
+
+        <div class="btn-group shadow-0 search" role="group" aria-label="Third group">
+            <input type="text" name="" id="" class="rounded-pill border-1 " >
+            <span class="fas fa-search">
+                
+            </span>
+        </div>
+    </div>
+    <br>
+
+    <!-- ------------------------------------------------------  -->
+
+    <!-- -- Datatable --  -->
+
+     <!-- ============================================================================================ -->
+
+    <!-- -- Table --  -->
+
+    <table id="example" class="table table-bordered" style="width: 97%; margin: auto 1rem">
+        <thead>
+            <tr>
+                <th>Order Date</th>
+                <th>Order Type</th>
+                <th>AdwitAds ID</th>
+                <th>Unique Job Number</th>
+                <th>Advertiser Number</th>
+                <th>Ad Rep Name</th>
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>22 Feb 2022</td>
+                <td>Print</td>
+                <td>2222 2222</td>
+                <td>Koch And Sons</td>
+                <td>Janice Monahan</td>
+                <td>Janice Monahan</td>
+                <td>In Production</td>
+                <td>1</td>
+                <td>
+                    <button type="button" class="btn btn-danger shadow-0 " data-mdb-toggle="" data-mdb-target="">
+                        Take Over
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>23 Feb 2022</td>
+                <td>Online</td>
+                <td>3333 3333</td>
+                <td>Steuber LLC</td>
+                <td>Rollin Fadel</td>
+                <td>Rollin Fadel</td>
+                <td>Order Accepted</td>
+                <td>4</td>
+                <td>
+                    <button type="button" class="btn btn-primary shadow-0" data-mdb-toggle="modal"
+                        data-mdb-target="#exampleModal">
+                        Start Design
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>24 Feb 2022</td>
+                <td>Page</td>
+                <td>4444 4444</td>
+                <td>Konopelski Group</td>
+                <td>Lara Stroman</td>
+                <td>Lara Stroman</td>
+                <td>Revision Submitted</td>
+                <td>5</td>
+                <td>
+                    <button type="button" class="btn btn-primary shadow-0" data-mdb-toggle="modal"
+                        data-mdb-target="#modal2">
+                        Start Design
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>25 Feb 2022</td>
+                <td>Online</td>
+                <td>5555 5555</td>
+                <td>Harber Inc</td>
+                <td>Adan Schiller</td>
+                <td>Adan Schiller</td>
+                <td>Proof Sent</td>
+                <td>6</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online </td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root</td>
+                <td>Joe Root</td>
+                <td>In QA</td>
+                <td>2</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+
+                </td>
+            </tr>
+
+            <!-- ================= dummy data for pagination ============================ -->
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>26 Feb 2022</td>
+                <td>Online</td>
+                <td>6666 6666</td>
+                <td>Apple Inc</td>
+                <td>Joe Root </td>
+                <td>Joe Root </td>
+                <td>Design Check</td>
+                <td>3</td>
+                <td class="text-center d-flex justify-content-evenly" style="font-size:24px ;  ">
+                    <i class="fas fa-eye " data-mdb-toggle="modal" data-mdb-target="#exampleModal3"></i>
+                    <i class="far fa-file-pdf" data-mdb-toggle="modal" data-mdb-target="#exampleModal4"></i>
+
+                </td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+
+     <!-- =================================================================================================== -->
+
+    <!-- -- footer --  -->
+
+    <footer class="bg-light  border-2 border-black border-top p-2" >
+
+        <div style="margin-left:70rem ;" >
+            <ul style="list-style-type:none ;display: flex; gap:3rem ;" >
+                <li>
+                    <a href="#" style="text-decoration: none;color: black ">FAQ's </a>
+                </li>
+                <li>
+                    <a href="#" style="text-decoration: none;color: black;">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- Modal 1 -->
+    <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Start Design - New Ad</h5>
+                    <button type="button" class="btn-close btn-close-white "  data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <h6>
+                        <ul>
+                            Order Information
+                        </ul>
+                    </h6>
+
+                    <div style="display: flex; gap: 3rem; ">
+                        <ul style="list-style-type:none ;">
+                            <li>Publication Name:</li>
+                            <li>Advertiser Name:</li>
+                            <li>Type of Ad:Print/Web</li>
+                        </ul>
+                        <ul style="list-style-type:none ;">
+                            <li>Category:</li>
+                            <li>CSR Instructions:</li>
+                            <li>Rush/Standard:</li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer ">
+
+                    <button type="button" class="btn btn-success">Download InDesign and Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- Modal 2 --  -->
+
+    <div class="modal top fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Start Design - Revision</h5>
+                    <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div>
+                        <h6>
+                            Notes & Instruction
+                        </h6>
+
+                        <input type="text" name="" id="" style="width: 100%;height: 5rem;border-style:dashed ;">
+                    </div>
+
+                    <hr>
+
+                    <div>
+
+                        <h6>
+                            Download / View Files
+                        </h6>
+
+                        <div style="display: flex; gap: 1rem;">
+
+                            <h6 style="margin-top: 8px;">
+                                Version 2
+                            </h6>
+
+                            <button type="button" class="btn btn-outline-dark"
+                                data-mdb-ripple-color="dark">Assets</button>
+                            <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Native
+                                Files</button>
+
+                        </div>
+                        <br>
+
+                        <div style="display: flex; gap: 1rem;">
+
+                            <h6 style="margin-top: 8px;">
+                                Version 2
+                            </h6>
+
+                            <button type="button" class="btn btn-outline-dark"
+                                data-mdb-ripple-color="dark">Assets</button>
+                            <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark">Native
+                                Files</button>
+                            <button type="button" class="btn btn-outline-dark"
+                                data-mdb-ripple-color="dark">Proof</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="modal-footer ">
+
+                    <button type="button" class="btn btn-success">Download InDesign and Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- -- Modal 3 --  -->
+
+
+    <div class="modal top fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">View Order - {AdwitAds ID} - {Unique Job
+                        ID} </h5>
+                    <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="d-flex gap-5">
+
+                        <div class="eye-modal">
+                            <div>
+                                <h6>Order Details</h6>
+                            </div>
+                            <ul>
+                                <li>Order Date:</li>
+                                <li>Publish Date:</li>
+                                <li>Type of Ad: Print/Web</li>
+                                <li>Color of Ad:</li>
+                                <li>Size of Ad:</li>
+                            </ul>
+                        </div>
+
+                        <div class="eye-modal">
+                            <div>
+                                <h6>Advertiser Details</h6>
+                            </div>
+                            <ul>
+                                <li>Advertiser Name:</li>
+                                <li>Contact Person:</li>
+                                <li>Email:</li>
+                                <li>Phone:</li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="d-flex gap-5 mt-4">
+
+                        <div class="eye-modal">
+                            <div>
+                                <h6>Time Log</h6>
+                            </div>
+                            <ul>
+                                <li>Order Submitted:</li>
+                                <li>Files Submitted:</li>
+                                <li>Proof (v1)Sent: </li>
+                                <li>Proof (v1a)Sent:</li>
+                                <li>Proof (v1b)Sent:</li>
+                            </ul>
+                        </div>
+
+                        <div class="eye-modal">
+                            <div>
+                                <h6>Files</h6>
+                            </div>
+
+                            <h6>Proof 1:v1 </h6>
+                            <ul>
+                                <li>Files Submitted:</li>
+                                <li>Ad Proof:</li>
+
+                            </ul>
+                            <hr style="width:90% ;margin:auto ;">
+
+                            <h6>Proof 2:v1a </h6>
+                            <ul>
+                                <li>Files Submitted:</li>
+                                <li>Ad Proof:</li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- ====================================================================================================================== -->
+
+                <!-- -- Modal 4 --  -->
+
+                <!-- -- Modal 3 --  -->
+
+
+    <div class="modal top fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-mdb-backdrop="true" data-mdb-keyboard="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white" id="exampleModalLabel">View Order - {AdwitAds ID} - {Unique Job
+                    ID} </h5>
+                <button type="button" class="btn-close btn-close-white" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="d-flex gap-5">
+
+                    <div class="eye-modal">
+                        <div>
+                            <h6>Order Details</h6>
+                        </div>
+                        <ul>
+                            <li>Order Date:</li>
+                            <li>Publish Date:</li>
+                            <li>Type of Ad: Print/Web</li>
+                            <li>Color of Ad:</li>
+                            <li>Size of Ad:</li>
+                        </ul>
+                    </div>
+
+                    <div class="eye-modal">
+                        <div>
+                            <h6>Advertiser Details</h6>
+                        </div>
+                        <ul>
+                            <li>Advertiser Name:</li>
+                            <li>Contact Person:</li>
+                            <li>Email:</li>
+                            <li>Phone:</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <div class="d-flex gap-5 mt-4">
+
+                    <div class="eye-modal">
+                        <div>
+                            <h6>Time Log</h6>
+                        </div>
+                        <ul>
+                            <li>Order Submitted:</li>
+                            <li>Files Submitted:</li>
+                            <li>Proof (v1)Sent: </li>
+                            <li>Proof (v1a)Sent:</li>
+                            <li>Proof (v1b)Sent:</li>
+                        </ul>
+                    </div>
+
+                    <div class="eye-modal">
+                        <div>
+                            <h6>Files</h6>
+                        </div>
+
+                        <h6>Proof 1:v1 </h6>
+                        <ul>
+                            <li>Files Submitted:</li>
+                            <li>Ad Proof:</li>
+
+                        </ul>
+                        <hr style="width:90% ;margin:auto ;">
+
+                        <h6>Proof 2:v1a </h6>
+                        <ul>
+                            <li>Files Submitted:</li>
+                            <li>Ad Proof:</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+
+    <!-- For Datatable  -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#example").DataTable({
+                ordering: false, // for sorting
+                lengthChange: false,
+                pageLength: 6, // for entries
+                bFilter: false, //for search field
+                bInfo: false, // entries info
+                // pagingType: 'simple',
+                oLanguage: {
+                    oPaginate: {
+                        sNext: '<i class="fas fa-angle-double-right"></i>',
+                        sPrevious: '<span class="pagination-previous" ><i class="fas fa-angle-double-left"></i></span> '
+                    }
+                }
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
