@@ -33,6 +33,11 @@
   right: 90%;
 }
 
+#search-input{
+
+  padding-left: 25px;
+}
+
 /* -- datatable --  */
 
 
